@@ -2,8 +2,11 @@
   "name": "tastaur-weather-cli",
   "version": "1.0.0",
   "description": "Training Cli",
-  "main": "index.js",
-  "bin": "./index.js",
+  "type": "module",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
   "bugs": {
     "email": "trrrrex93@gmail.com",
     "url": "https://github.com/Tastaur"
@@ -17,7 +20,14 @@
   ],
   "author": "Mark.Sobolev",
   "license": "ISC",
+  "repository": {
+    "email": "trrrrex93@gmail.com",
+    "url": "https://github.com/Tastaur"
+  },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "chalk": "^5.0.1",
+    "dedent-js": "^1.0.1",
+    "os": "^0.1.2"
   }
 }
