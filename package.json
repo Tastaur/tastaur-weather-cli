@@ -1,0 +1,20 @@
+{
+  "name": "tastaur-weather-cli",
+  "version": "1.0.0",
+  "description": "Training Cli",
+  "main": "index.js",
+  "bin": "./index.js",
+  "bugs": {
+    "email": "trrrrex93@gmail.com",
+    "url": "https://github.com/Tastaur"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weather",
+    "cli"
+  ],
+  "author": "Mark.Sobolev",
+  "license": "ISC"
+}
