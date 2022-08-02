@@ -16,5 +16,8 @@
     "cli"
   ],
   "author": "Mark.Sobolev",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
