@@ -6,9 +6,12 @@ import {printError, printSuccess} from "./logService.js";
 
 export const saveFilePath = join(homedir(), 'weather-cli.json')
 
+const token = 'token'
+const city = 'city'
+
 export const fieldNames = {
-    'token': 'токен',
-    'city': 'город'
+    [token]: 'токен',
+    [city]: 'город'
 }
 
 const isFileExist = async (path) => {
@@ -45,9 +48,17 @@ export const saveInStorage = async (key, value) => {
 }
 
 export const saveToken = async (value) => {
-    await saveInStorage('token', value)
+    await saveInStorage(token, value)
 }
 
 export const saveCity = async (value) => {
-    await saveInStorage('city', value)
+    await saveInStorage(city, value)
+}
+
+export const getToken = async () => {
+    await getKeyValue(token)
+}
+
+export const getCity = async () => {
+    await getKeyValue(city)
 }
