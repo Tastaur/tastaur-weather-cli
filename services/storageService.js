@@ -55,10 +55,10 @@ export const saveCity = async (value) => {
     await saveInStorage(city, value)
 }
 
-export const getToken = async () => {
-    await getKeyValue(token)
+export const getToken =  () => {
+    return getKeyValue(token)
 }
 
-export const getCity = async () => {
-    await getKeyValue(city)
+export const getCity =  () => {
+     return getKeyValue(city)
 }

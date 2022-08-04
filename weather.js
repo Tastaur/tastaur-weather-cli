@@ -2,6 +2,7 @@
 import {argsFromArgv} from './helpers/index.js'
 import {printHelp} from "./services/logService.js";
 import {saveCity, saveToken} from "./services/storageService.js";
+import {requestWeather} from "./services/requesService.js";
 
 const init = () => {
     const args = argsFromArgv(process.argv)
@@ -9,11 +10,12 @@ const init = () => {
         return printHelp()
     }
     if (args.c) {
-        return saveCity(args.s)
+        return saveCity(args.c)
     }
     if (args.t) {
-        return saveToken('123')
+        return saveToken(args.t)
     }
+    return requestWeather()
 }
 
 init()
